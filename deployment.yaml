@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  namespace: workshop-test-namespace # CHANGE
+  name: nginx
+  namespace: workshop-test # CHANGE
   labels:
     app: nginx
 spec:
