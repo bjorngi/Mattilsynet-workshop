@@ -12,3 +12,4 @@ spec:
         backend:
           serviceName: nginx-test
           servicePort: 80
+  - host: asg.buzzword.ninja # CHANGE
