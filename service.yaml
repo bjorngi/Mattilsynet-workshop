@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: nginx
+    namespace: <ditt-navn> # CHANGE ME
   type: NodePort
   ports:
   - protocol: TCP

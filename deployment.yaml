@@ -13,9 +13,10 @@ spec:
     metadata:
       labels:
         app: nginx
+        namespace: <ditt-navn>
     spec:
       containers:
       - name: nginx
-        image: nginx:1.15.4 # CHANGE
+        image: <din-dockerhub-bruker>/nginx
         ports:
         - containerPort: 80

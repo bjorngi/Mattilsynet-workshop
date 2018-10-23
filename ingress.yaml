@@ -2,14 +2,12 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: nginx
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-      - path: /testpath
+      - path: /
         backend:
-          serviceName: nginx-test
+          serviceName: nginx
           servicePort: 80
-  - host: asg.buzzword.ninja # CHANGE
+  - host: <ditt-navn>.buzzword.ninja # CHANGE
