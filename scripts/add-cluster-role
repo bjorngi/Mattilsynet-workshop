@@ -1,3 +1,0 @@
-#!/bin/bash
-cat new-user-setup.yaml | sed s/USER/$1/g | kubectl apply -f -
-kubectl get secret -n kube-system | grep -E "$1.*"
